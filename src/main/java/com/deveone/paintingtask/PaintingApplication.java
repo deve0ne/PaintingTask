@@ -7,11 +7,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class PaintingApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        fxmlLoader.setController(new HelloController());
+        FXMLLoader fxmlLoader = new FXMLLoader(PaintingApplication.class.getResource("paint-view.fxml"));
+        fxmlLoader.setController(new PaintingController());
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Painting");
         stage.setScene(scene);
