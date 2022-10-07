@@ -44,6 +44,7 @@ public class PaintingController {
             public void run() {
                 gc.drawImage(snapshot, 0, 0);
                 gc.save();
+
                 boat.draw(gc);
 
                 gc.restore();
